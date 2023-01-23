@@ -25,9 +25,14 @@ int main()
         cout << listeFigures[i]->getAire() << endl; 
     }
 
+    cout << "Le nombre de figures est: " << Figures::nombreFigures() << endl;
+
     for (int i=0; i<listeFigures.size(); i++)
     {
         delete listeFigures[i]; // clear la case mémoire occupée par l'objet au bout de mon pointeur
         listeFigures[i] = 0; // reset le pointeur à zero
     }
+
+    cout << "Le nombre de figures est: " << Figures::nombreFigures() << endl;
+
 }

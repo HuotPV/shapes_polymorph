@@ -17,8 +17,11 @@ class Figures
     virtual double getAire() const = 0;
     virtual ~Figures();
 
+    int static nombreFigures(); // une méthode statique: ici une méthode qui nous permet de connaitre le nombre total de figures
+
 
     protected:
+    static int compteur; // Un attribut statique: ici le compteur de figures
 
 };
 
